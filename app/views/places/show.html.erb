@@ -4,9 +4,12 @@
 
 <ul>
   <% for entry in @entries%>
-    <li><%=entry.title%> 
-    <%=entry.occured_on%>
-    <%=entry.description%>
+    <li>
+      <strong><%= entry.title %></strong>
+      <ul>
+        <li>Description: <%= entry.description %></li>
+        <li>Occurred On: <%= entry.occurred_on %></li>
+      </ul>
     </li>
   <%end%>
 </ul>
